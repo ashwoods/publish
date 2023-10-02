@@ -15,7 +15,7 @@ jobs:
             -e
             -c "
             set -x &&
-            apt-get update && apt-get install dnsutils traceroute curl &&
+            apt-get update && apt-get install -y dnsutils traceroute curl &&
             dig pypi.org A;
             dig pypi.org AAAA;
             dig files.pythonhosted.org A;
